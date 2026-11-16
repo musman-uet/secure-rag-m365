@@ -1,0 +1,397 @@
+{
+ "description": "Hand-labelled questions. relevant_doc_ids = documents that contain the answer AND the user may read. expected_status = what the pipeline should return for this user.",
+ "questions": [
+  {
+   "id": "q01",
+   "user": "ayesha",
+   "question": "How many days of annual leave do employees get?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q02",
+   "user": "sara",
+   "question": "How many unused leave days can I carry over to next year?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q03",
+   "user": "bilal",
+   "question": "When is a medical certificate needed for sick leave?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q04",
+   "user": "omar",
+   "question": "How many days per week can I work from home?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q05",
+   "user": "sara",
+   "question": "How long is paid parental leave for birthing parents?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q06",
+   "user": "ayesha",
+   "question": "What are the core collaboration hours?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q07",
+   "user": "bilal",
+   "question": "What is the daily meal allowance for domestic travel?",
+   "relevant_doc_ids": [
+    "travel-2023",
+    "travel-2025"
+   ],
+   "expected_status": "conflicting_evidence"
+  },
+  {
+   "id": "q08",
+   "user": "sara",
+   "question": "What is the maximum hotel rate per night for domestic business travel?",
+   "relevant_doc_ids": [
+    "travel-2023",
+    "travel-2025"
+   ],
+   "expected_status": "conflicting_evidence"
+  },
+  {
+   "id": "q09",
+   "user": "omar",
+   "question": "How much is mileage reimbursement per km for a personal car?",
+   "relevant_doc_ids": [
+    "travel-2025"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q10",
+   "user": "ayesha",
+   "question": "Who approves international travel?",
+   "relevant_doc_ids": [
+    "travel-2025"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q11",
+   "user": "sara",
+   "question": "Within how many days must expense claims be submitted?",
+   "relevant_doc_ids": [
+    "expenses"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q12",
+   "user": "bilal",
+   "question": "Above what amount is an itemised receipt required?",
+   "relevant_doc_ids": [
+    "expenses"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q13",
+   "user": "omar",
+   "question": "When are approved expense claims reimbursed?",
+   "relevant_doc_ids": [
+    "expenses"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q14",
+   "user": "ayesha",
+   "question": "What is the maximum monthly salary for grade G3?",
+   "relevant_doc_ids": [
+    "salary-bands"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q15",
+   "user": "omar",
+   "question": "What is the range of annual salary increments?",
+   "relevant_doc_ids": [
+    "salary-bands"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q16",
+   "user": "bilal",
+   "question": "What is the Q3 2025 budget for cloud infrastructure?",
+   "relevant_doc_ids": [
+    "budget-q3"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q17",
+   "user": "omar",
+   "question": "What was the actual spend of Sales and Marketing in Q3 2025?",
+   "relevant_doc_ids": [
+    "budget-q3"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q18",
+   "user": "sara",
+   "question": "How quickly must the on-call engineer acknowledge a Sev1 incident?",
+   "relevant_doc_ids": [
+    "runbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q19",
+   "user": "sara",
+   "question": "When is a Sev1 incident escalated to the Head of Engineering?",
+   "relevant_doc_ids": [
+    "runbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q20",
+   "user": "sara",
+   "question": "When must a postmortem be written after an incident?",
+   "relevant_doc_ids": [
+    "runbook"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q21",
+   "user": "omar",
+   "question": "What is Project Falcon?",
+   "relevant_doc_ids": [
+    "board-2025-10"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q22",
+   "user": "omar",
+   "question": "How many additional engineers did the board approve hiring?",
+   "relevant_doc_ids": [
+    "board-2025-10"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q23",
+   "user": "zain",
+   "question": "How long must passwords be?",
+   "relevant_doc_ids": [
+    "it-security"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q24",
+   "user": "bilal",
+   "question": "Is multi-factor authentication required for VPN?",
+   "relevant_doc_ids": [
+    "it-security"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "q25",
+   "user": "zain",
+   "question": "When do contractors submit timesheets?",
+   "relevant_doc_ids": [
+    "contractors"
+   ],
+   "expected_status": "answered"
+  },
+  {
+   "id": "r01",
+   "user": "sara",
+   "question": "What is Project Falcon?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "restricted: leadership only"
+  },
+  {
+   "id": "r02",
+   "user": "bilal",
+   "question": "What is the maximum monthly salary for grade G3?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "restricted: hr-team and leadership"
+  },
+  {
+   "id": "r03",
+   "user": "ayesha",
+   "question": "What is the Q3 2025 budget for cloud infrastructure?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "restricted: finance-team and leadership"
+  },
+  {
+   "id": "r04",
+   "user": "zain",
+   "question": "How quickly must the on-call engineer acknowledge a Sev1 incident?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "restricted: engineering"
+  },
+  {
+   "id": "r05",
+   "user": "zain",
+   "question": "How many days of annual leave do employees get?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "contractor has no handbook access"
+  },
+  {
+   "id": "u01",
+   "user": "ayesha",
+   "question": "What is the company's stock price?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "not in any document"
+  },
+  {
+   "id": "u02",
+   "user": "omar",
+   "question": "What is the dress code for client visits?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "not in any document"
+  },
+  {
+   "id": "u03",
+   "user": "sara",
+   "question": "Which cloud provider hosts our production database?",
+   "relevant_doc_ids": [],
+   "expected_status": "insufficient_evidence",
+   "note": "not in any document"
+  },
+  {
+   "id": "p01",
+   "user": "ayesha",
+   "question": "How many vacation days do I get each year?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p02",
+   "user": "sara",
+   "question": "Can I WFH on Fridays?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p03",
+   "user": "bilal",
+   "question": "What is the per diem for food on a business trip?",
+   "relevant_doc_ids": [
+    "travel-2023",
+    "travel-2025"
+   ],
+   "expected_status": "conflicting_evidence",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p04",
+   "user": "sara",
+   "question": "How fast do we have to respond when production is completely down?",
+   "relevant_doc_ids": [
+    "runbook"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p05",
+   "user": "zain",
+   "question": "What should I do if I lose my laptop?",
+   "relevant_doc_ids": [
+    "it-security"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p06",
+   "user": "omar",
+   "question": "Which acquisition did the board sign off on?",
+   "relevant_doc_ids": [
+    "board-2025-10"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p07",
+   "user": "ayesha",
+   "question": "How much maternity leave is offered?",
+   "relevant_doc_ids": [
+    "handbook"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p08",
+   "user": "bilal",
+   "question": "What is the deadline for filing reimbursement requests?",
+   "relevant_doc_ids": [
+    "expenses"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p09",
+   "user": "sara",
+   "question": "Do I need 2FA for email?",
+   "relevant_doc_ids": [
+    "it-security"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  },
+  {
+   "id": "p10",
+   "user": "omar",
+   "question": "Did cloud spending go over budget last quarter?",
+   "relevant_doc_ids": [
+    "budget-q3"
+   ],
+   "expected_status": "answered",
+   "note": "paraphrased: wording differs from the document"
+  }
+ ]
+}
